@@ -216,27 +216,9 @@ export const AUTHORIZED_USERS = {
     displayName: 'Admin',
     role: 'admin'
   },
-  'rahul@gmail.com': { password: 'Rahul@654', displayName: 'Rahul' },
-  'sourav@gmail.com': { password: 'Sourav@615', displayName: 'Sourav' },
-  'dharam@gmail.com': { password: 'Dharam@987', displayName: 'Dharam' },
-  'rinu@gmail.com': { password: 'Rinu@765', displayName: 'Rinu' },
-  'amol@gmail.com': { password: 'Amol@432', displayName: 'Amol' },
-  'adnan@gmail.com': { password: 'Adnan@109', displayName: 'Adnan' },
-  'gaurav@gmail.com': { password: 'Gaurav@543', displayName: 'Gaurav' },
-  'sachin@gmail.com': { password: 'Sachin@210', displayName: 'Sachin' },
-  'soumya@gmail.com': { password: 'Soumya@976', displayName: 'Soumya' },
-  'srideep@gmail.com': { password: 'Srideep@543', displayName: 'Srideep' },
-  'suresh@gmail.com': { password: 'Suresh@212', displayName: 'Suresh' },
-  'vinayak@gmail.com': { password: 'Vinayak@563', displayName: 'Vinayak' },
-  'shalini@gmail.com': { password: 'Shalini@765', displayName: 'Shalini' },
-  'riddhis@gmail.com': { password: 'Riddhis@475', displayName: 'Riddhis' },
-  'jyoti@gmail.com': { password: 'Jyoti@372', displayName: 'Jyoti' },
-  'ashwani@gmail.com': { password: 'Ashwani@842', displayName: 'Ashwani' },
-  'amit@gmail.com': { password: 'Amit@629', displayName: 'Amit' },
-  'vicky@gmail.com': { password: 'Vicky@420', displayName: 'Vicky' },
-  'swapnil@gmail.com': { password: 'Swapnil@645', displayName: 'Swapnil' },
-  'kedar@gmail.com': { password: 'Kedar@543', displayName: 'Kedar' },
-  'Priyansh@gmail.com': { password: 'Priyansh@224', displayName: 'Priyansh' }
+  //  add your gmail and password like this 
+  // 'hello@gmail.com': { password: 'hello@654', displayName: 'hello' },
+ 
 };
 
 const SignIn = ({ onSignIn }) => {
