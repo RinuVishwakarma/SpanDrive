@@ -1,0 +1,277 @@
+
+/* @import url('https://use.typekit.net/xxx.css'); /* Replace 'xxx' with your actual
+ Typekit kit ID */ 
+ /* @import url('https://fonts.cdnfonts.com/css/niveau-grotesk-regular'); */
+* {
+  margin: 0;
+  font-family: 'niveau-grotesk', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Niveau Grotesk Bold', sans-serif;   
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#fff;
+  width: 100%;
+}
+
+
+
+
+code {
+  font-family: 'niveau-grotesk', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+ .App {
+  display: flex;
+  grid-template-columns: 300px auto 50px;
+
+
+   width: 100%;
+  justify-content: center;
+  align-items: center;
+}  
+
+
+
+/* Footer styling */
+.footer_container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color:#ADB8EB;
+ 
+  bottom: 0;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content {
+  text-align: center;           
+ 
+  font-weight: 400;
+  font-size: 14px;
+ 
+ 
+}
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.simple-table th {
+  padding: 12px 12px 12px 65px;
+  text-align: left;
+}
+
+.simple-table td {
+  padding: 0px 0px 0px 40px;
+  text-align: left;
+  border-bottom: 1px solid #c0b9b9;
+}
+
+.simple-table th:nth-child(1),
+.simple-table td:nth-child(1) {
+  width: 600px; 
+  min-width: 300px; 
+}
+
+.simple-table th {
+  background-color: rgba(173, 184, 235, 0.2); 
+  color: #333;
+}
+
+.simple-table tr:hover {
+  background-color: rgba(173, 184, 235, 0.1);         
+}
+
+.file-name {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-name span {
+  margin-left: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-buttons svg {
+  cursor: pointer;
+  color: #555;
+}
+
+.action-buttons svg:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .simple-table {
+    font-size: 14px;
+  }
+
+  .simple-table th, 
+  .simple-table td {
+    padding: 8px 4px;
+  }
+
+  .simple-table th:nth-child(1),
+  .simple-table td:nth-child(1) {
+    width: auto;
+    min-width: 200px;
+  }
+
+  .action-buttons {
+    gap: 4px;
+  }
+
+  .action-buttons svg {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .simple-table {
+    font-size: 12px;
+  }
+
+  .simple-table th, 
+  .simple-table td {
+    padding: 6px 2px;
+  }
+
+  .simple-table th:nth-child(1),
+  .simple-table td:nth-child(1) {
+    min-width: 120px;
+  }
+
+  .file-name {
+    max-width: 100%;
+  }
+
+  .file-name span {
+    margin-left: 4px;
+  }
+
+  .action-buttons {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .action-buttons svg {
+    font-size: 16px;
+  }
+}
+.sidebar-container {
+  background-color: #F4F4F4;
+  padding: 10px;
+  display: flex;
+  font-size: 16px;
+  font-weight:normal;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+.sidebar-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  color: #333;
+  margin: 0 10px;
+  position: relative; /* For positioning the underline */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.sidebar-option:hover,
+.sidebar-option.active {
+
+}
+
+.sidebar-option svg {
+  margin-right: 10px;
+}
+
+.sidebar-option::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #FF6C2A;
+ 
+}
+
+.sidebar-option:hover::after,
+.sidebar-option.active::after {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar-container {
+    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+    justify-content: flex-start;
+    padding: 8px;
+  }
+
+  .sidebar-option {
+    padding: 8px 10px;
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  .sidebar-option svg {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar-container {
+    justify-content: flex-start;
+    padding: 8px;
+  }
+
+  .sidebar-option {
+    padding: 6px 8px;
+    margin: 0 3px;
+    font-size: 12px;
+  }
+
+  .sidebar-option svg {
+    margin-right: 3px;
+    font-size: 16px;
+  }
+}
+
+
+
+sup{
+  vertical-align:super;
+font-size:16px;
+font-weight:500;
+color:#FF6C2A;
+text-decoration: none;
+};

@@ -1,0 +1,120 @@
+// eslint-disable-next-line
+import React, { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import "./index.css";
+
+function Editor() {
+  const module = {
+    toolbar: [
+      [{ header: [1, 2, 3, 4, false] }],
+      ["bold", "italic", "underline", "strike", "blockquote"],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      ["link", "image"],
+      ["clean"],
+    ],
+  };
+  const formats = [
+    "header",
+    "bold",
+    "italic",
+    "underline",
+    "strike",
+    "blockquote",
+    "list",
+    "bullet",
+    "indent",
+    "link",
+    "image",
+  ];
+
+  const [value, setValue] = useState(
+    localStorage.hasOwnProperty("text") ? localStorage.getItem("text") : "Start By typing anything then press the save button to save it , next time you reopen this you would get what you saved back instead of this text"
+  );
+  const save = (val) => {
+    localStorage.setItem("text", val);
+    alert("Your most recent shitty piece of text has been saved kthx");
+  };
+
+  return (
+    <div className="container">
+      <button onClick={() => save(value)} className="saveBtn">
+        Save
+      </button>
+      <ReactQuill
+        className="ql-toolbar"
+        theme="snow"
+        value={value}
+        onChange={setValue}
+        modules={module}
+        formats={formats}
+      />
+    </div>
+  );
+}
+
+export default Editor;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<LogoTextWrapper>
+          <TextImage src="Text2.png" alt="Text" />
+        </LogoTextWrapper>
+       
+        <LoginWrapper>
+      
+          {/* <h3>NEST <sup>BETA</sup></h3> */}
+          <NestHeading>
+        <span>NEST</span> <sup>BETA</sup>
+      </NestHeading>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              placeholder="USERNAME"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              placeholder="PASSWORD"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <button type="submit">Login</button>
+            {error && <p>{error}</p>}
+          </form>
+        </LoginWrapper>
+
+
+
+
+
+
+const LogoTextWrapper = styled.div`
+  display: flex;          
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  @media (max-width: 768px) {
+    animation: ${moveToTop} 0.5s ease-out forwards;
+      margin-right: 120px;
+  }
+`;
