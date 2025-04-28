@@ -1,22 +1,17 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    // apiKey: "AIzaSyAiXqk7tOuYM_VdDJ8iorMIDhXksMVrgf8",
-    // authDomain: "testproject-fb1e5.firebaseapp.com",
-    // projectId: "testproject-fb1e5",
-    // storageBucket: "testproject-fb1e5.appspot.com",
-    // messagingSenderId: "259861457792",
-    // appId: "1:259861457792:web:58f777e655fef837296f65",
-    // measurementId: "G-VXJNCF58V1"
+   
 
 
-    apiKey: "AIzaSyBAF56YIFKot0fbIdFY6whApdKcKEwYkx0",
-  authDomain: "dumpyard-c1af2.firebaseapp.com",
-  projectId: "dumpyard-c1af2",
-  storageBucket: "dumpyard-c1af2.appspot.com",
-  messagingSenderId: "230246280874",
-  appId: "1:230246280874:web:e7fb52323fe124e59cead3",
-  measurementId: "G-WV2DNBZPZ5"  
+REACT_APP_API_KEY=YOUR_FIREBASE_API_KEY 
+REACT_APP_AUTH_DOMAIN=YOUR_FIREBASE_AUTH_DOMAIN 
+REACT_APP_PROJECT_ID=YOUR_FIREBASE_PROJECT_ID 
+REACT_APP_STORAGE_BUCKET=YOUR_FIREBASE_STORAGE_BUCKET 
+REACT_APP_MESSAGING_SENDER_ID=YOUR_FIREBASE_MESSAGING_SENDER_ID 
+REACT_APP_APP_ID=YOUR_FIREBASE_APP_ID  
+REACT_APP_MEASUREMENT_ID=YOUR_FIREBASE_MEASUREMENT_ID 
+
 
 
 
