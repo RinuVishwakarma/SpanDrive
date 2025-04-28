@@ -1,4 +1,4 @@
-# Nest - Modern File Management System
+# Nest -  File Management System
 
 A modern file management and storage system built with React, Firebase, and Material-UI. Nest provides a comprehensive solution for file storage, sharing, and security management.
 
